@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile Card</title>
+
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f2f2f2;
+        font-family: Arial, sans-serif;
+      }
+
+      .profile-card {
+        background: #fff;
+        width: 300px;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+      }
+
+      .profile-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      .profile-card img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+      }
+
+      .profile-card h2 {
+        margin: 5px 0;
+      }
+
+      .profile-card p {
+        font-size: 14px;
+        color: #555;
+      }
+
+      .stats {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+      }
+
+      .stat {
+        text-align: center;
+      }
+
+      .stat h3 {
+        margin: 0;
+        font-size: 16px;
+      }
+
+      .stat span {
+        font-size: 12px;
+        color: #777;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 25px;
+        background: #007bff;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      button:hover {
+        background: #0056b3;
+      }
+
+      @media (max-width: 400px) {
+        .profile-card {
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="profile-card">
+      <img src="image.png" alt="Profile" />
+      <h2>Aditya Kumar Mishra</h2>
+      <p>Frontend Developer | UI Designer</p>
+
+      <div class="stats">
+        <div class="stat">
+          <h3>120</h3>
+          <span>Posts</span>
+        </div>
+        <div class="stat">
+          <h3>500</h3>
+          <span>Followers</span>
+        </div>
+        <div class="stat">
+          <h3>180</h3>
+          <span>Following</span>
+        </div>
+      </div>
+
+      <button>Follow</button>
+    </div>
+  </body>
+</html>
