@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Questions</title>
+
+<style>
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#667eea,#764ba2);
+  font-family:Arial, sans-serif;
+}
+
+.container{
+  background:white;
+  padding:30px;
+  border-radius:15px;
+  width:350px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1{
+  text-align:center;
+  margin-bottom:25px;
+}
+
+.links{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+
+a{
+  text-decoration:none;
+  background:#f1f1f1;
+  padding:10px;
+  border-radius:8px;
+  text-align:center;
+  color:#333;
+  font-weight:bold;
+  transition:all 0.3s;
+}
+
+a:hover{
+  background:#667eea;
+  color:white;
+  transform:translateY(-3px);
+}
+
+@media(max-width:400px){
+  .container{
+    width:90%;
+  }
+  .links{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>All the Questions</h1>
+
+  <div class="links">
+    <a href="./Question1/index.html">Question 1</a>
+    <a href="./Question2/index.html">Question 2</a>
+    <a href="./Question3/index.js">Question 3</a>
+    <a href="./Question4/index.js">Question 4</a>
+    <a href="./Question5/index.js">Question 5</a>
+    <a href="./Question6/index.js">Question 6</a>
+    <a href="./Question7/index.js">Question 7</a>
+    <a href="./Question8/index.js">Question 8</a>
+    <a href="./Question9/index.html">Question 9</a>
+    <a href="./Question10/index.html">Question 10</a>
+  </div>
+</div>
+
+</body>
+</html>
